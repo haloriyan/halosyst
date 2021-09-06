@@ -1,0 +1,58 @@
+body {
+    background-color: #fff;
+}
+.content {
+    position: absolute;
+    top: 20%;left: 30%;
+    width: 40%;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-family: ProBold;
+}
+.content p {
+    margin-top: -10px;
+}
+.content .box {
+    width: auto;
+    padding: 0px;
+    border: none;
+    font-family: ProBold;
+    color: #666;
+}
+.content input.box.bordered {
+    border: 1px solid #ddd;
+    font-size: 17px;
+    padding: 0px 20px;
+    width: 100%;
+}
+.content input.box {
+    font-size: 40px;
+}
+.content .box:focus {
+    box-shadow: none;
+}
+.content .contactList {
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 90%;
+        left: 5%;top: 80px;
+    }
+    .content .contactList {
+        margin-top: 30px;
+        display: block;
+    }
+    .content h1,.content .box,.content p {
+        font-size: 20px !important;
+    }
+    .content .teks-besar {
+        font-size: 20px !important;
+    }
+    .content button,.content .box.teks-besar {
+        font-size: 14px !important;
+    }
+}
